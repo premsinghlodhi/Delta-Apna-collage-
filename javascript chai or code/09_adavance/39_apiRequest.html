@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="prem" style="background-color: rgb(245, 239, 239);"
+ >hghjh</div>
+
+</body>
+<script>
+    let obj;
+
+
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary"
+    // const requestUrl = "https://api.github.com/users/premsinghlodhi"
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(data)
+            obj = {
+                followers: console.log(data.followers),
+                image: console.log(data.avatar_url)
+
+            }
+        }
+
+    }
+xhr.send()
+
+
+
+</script>
+
+</html>

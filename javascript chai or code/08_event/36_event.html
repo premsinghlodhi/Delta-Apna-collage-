@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amazing image</title>
+  </head>
+  <body>
+    <h1>amazing image</h1>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="100px;"
+            id="a1"
+            src="asset\Screenshot 2024-02-12 200954.png"
+            alt="a11"
+          />
+        </li>
+        <li>
+          <img
+            width="100px;"
+            id="a2"
+            src="asset\Screenshot 2024-02-12 200830.png"
+            alt="a12"
+          />
+        </li>
+        <li>
+          <img
+            width="100px;"
+            id="a3"
+            src="asset\Screenshot 2024-02-12 201025.png"
+            alt="a13"
+          />
+        </li>
+        <li>
+          <img
+            width="100px;"
+            id="a4"
+            src="asset\Screenshot 2024-02-12 200914.png"
+            alt="a14"
+          />
+        </li>
+        <li>
+          <img
+            width="100px;"
+            id="a5"
+            src="asset\Screenshot 2024-02-12 201107.png"
+            alt="a15"
+          />
+        </li>
+        <li>
+          <img
+            width="100px;"
+            id="a6"
+            src="asset\Screenshot 2024-02-12 200914.png"
+            alt="a16"
+          />
+        </li>
+        <li><a id=" google" href="https://www.google.co.in/">google</a></li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    //document.getElementById('a2').onclick=function(){
+    //   alert("a12 clicked")
+    //}
+    
+document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.parentNode)
+    let removeit = e.target.parentNode
+    removeit.remove()
+})
+
+
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>chai or javascript</h1>
+    <p id="p"></p>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+</body>
+<script>
+    //let para= document.querySelector('#p').innerHTML()
+    const fun1 = function (str) {
+        console.log(str, Date.now());
+    }
+    const interval_fun = setInterval(fun1, 3000, "hi")
+    clearInterval(interval_fun);
+
+    let fun2 = function () {
+        let date = Date.now()
+        document.querySelector('#p').innerHTML = `hello i am prem ${date} `
+    }
+
+    //const start = setInterval(fun2, 2000)
+
+    document.querySelector('#start').addEventListener('click', function () {
+        const start = setInterval(fun2, 2000)
+        document.querySelector('#stop').addEventListener('click', function () {
+            clearInterval(start)
+        })
+    })
+
+</script>
+
+</html>

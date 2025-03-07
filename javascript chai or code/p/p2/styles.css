@@ -1,0 +1,25 @@
+.a{
+    background: white;
+    text-align: center;
+
+}
+
+.button{
+   
+    padding: 40px;
+    border: 100px;
+}
+
+#grey{
+    background-color: grey;
+}
+
+#yellow{
+    background-color: yellow;
+}
+#red{
+    background-color:red;
+}
+#pink{
+    background-color: pink;
+}
